@@ -8,7 +8,7 @@ class frequency {
         List<Integer> list=new ArrayList<>();
         List<Integer> list1=new ArrayList<>();
         List<Integer> list2=new ArrayList<>();
-        int[] a = {1,1,2,2,2,3,3,3,3};
+        int[] a = {1,1,2,3,2,2,3,3,3,3};
         int count=1;
         for (int i=0; i<a.length; i++){
             if(!list1.contains(a[i])) {
@@ -21,6 +21,7 @@ class frequency {
                             }
                         }
                 }
+                System.out.println(count);
                 int max=maximum(list);
                 list2.add(max);
                 list.clear();
